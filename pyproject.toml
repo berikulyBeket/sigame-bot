@@ -1,0 +1,14 @@
+[project]
+name = "sigame-bot"
+version = "1.0.0"
+description = "Telegram-бот «Своя игра» — аналог SIGame с поддержкой пакетов .siq"
+requires-python = ">=3.11"
+dependencies = ["aiogram>=3.13,<4"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120

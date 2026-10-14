@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package name="Демо-пакет" version="5" date="13.10.2026" difficulty="3" language="ru-RU" xmlns="https://github.com/VladimirKhil/SI/blob/master/assets/siq_5.xsd">
+  <info>
+    <authors>
+      <author>sigame-bot</author>
+    </authors>
+    <comments>Пакет для знакомства с ботом: разминка, основной раунд со всеми особыми вопросами и финал.</comments>
+  </info>
+  <rounds>
+    <round name="Разминка">
+      <themes>
+        <theme name="География">
+          <questions>
+            <question price="100">
+              <params>
+                <param name="question" type="content">
+                  <item>Флаг какой страны на картинке?</item>
+                  <item type="image" isRef="True">japan.png</item>
+                </param>
+              </params>
+              <right><answer>Япония</answer></right>
+            </question>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Столица Австралии — этот город, а вовсе не Сидней.</item>
+                </param>
+              </params>
+              <right><answer>Канберра</answer></right>
+              <wrong><answer>Сидней</answer><answer>Мельбурн</answer></wrong>
+            </question>
+            <question price="300">
+              <info><comments>Максимальная глубина Байкала — 1642 метра.</comments></info>
+              <params>
+                <param name="question" type="content">
+                  <item>Самое глубокое озеро на планете.</item>
+                </param>
+              </params>
+              <right><answer>Байкал</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Этот пролив отделяет Азию от Северной Америки.</item>
+                </param>
+              </params>
+              <right><answer>Берингов пролив</answer><answer>Берингов</answer></right>
+            </question>
+            <question price="500">
+              <info><comments>5895 метров над уровнем моря.</comments></info>
+              <params>
+                <param name="question" type="content">
+                  <item>Высочайшая вершина Африки.</item>
+                </param>
+              </params>
+              <right><answer>Килиманджаро</answer></right>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Литература">
+          <questions>
+            <question price="100">
+              <params>
+                <param name="question" type="content">
+                  <item>Автор романа «Война и мир».</item>
+                </param>
+              </params>
+              <right><answer>Лев Толстой</answer><answer>Толстой</answer></right>
+              <wrong><answer>Алексей Толстой</answer></wrong>
+            </question>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Как звали собачку, которую утопил Герасим в рассказе Тургенева?</item>
+                </param>
+              </params>
+              <right><answer>Муму</answer></right>
+            </question>
+            <question price="300">
+              <params>
+                <param name="question" type="content">
+                  <item>Фамилия главного героя романа «Преступление и наказание».</item>
+                </param>
+              </params>
+              <right><answer>Раскольников</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Это произведение Пушкин называл «романом в стихах».</item>
+                </param>
+              </params>
+              <right><answer>Евгений Онегин</answer><answer>Онегин</answer></right>
+            </question>
+            <question price="500">
+              <params>
+                <param name="question" type="content">
+                  <item>Эта английская писательница придумала Эркюля Пуаро и мисс Марпл.</item>
+                </param>
+              </params>
+              <right><answer>Агата Кристи</answer><answer>Кристи</answer></right>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Наука">
+          <questions>
+            <question price="100">
+              <params>
+                <param name="question" type="content">
+                  <item>Химический символ золота.</item>
+                </param>
+              </params>
+              <right><answer>Au</answer></right>
+              <wrong><answer>Ag</answer></wrong>
+            </question>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Самая большая планета Солнечной системы.</item>
+                </param>
+              </params>
+              <right><answer>Юпитер</answer></right>
+            </question>
+            <question price="300">
+              <params>
+                <param name="question" type="content">
+                  <item>Учёный, сформулировавший три закона механики и закон всемирного тяготения.</item>
+                </param>
+              </params>
+              <right><answer>Исаак Ньютон</answer><answer>Ньютон</answer></right>
+            </question>
+            <question price="400">
+              <info><comments>23 пары хромосом.</comments></info>
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько хромосом в обычной (соматической) клетке человека?</item>
+                </param>
+              </params>
+              <right><answer>46</answer></right>
+            </question>
+            <question price="500">
+              <params>
+                <param name="question" type="content">
+                  <item>Этот газ составляет около 78 % атмосферы Земли.</item>
+                </param>
+              </params>
+              <right><answer>Азот</answer></right>
+              <wrong><answer>Кислород</answer></wrong>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Кино и мультфильмы">
+          <questions>
+            <question price="100">
+              <params>
+                <param name="question" type="content">
+                  <item>Как зовут зелёного огра из мультфильма студии DreamWorks 2001 года?</item>
+                </param>
+              </params>
+              <right><answer>Шрек</answer></right>
+            </question>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Режиссёр фильма «Титаник» 1997 года.</item>
+                </param>
+              </params>
+              <right><answer>Джеймс Кэмерон</answer><answer>Кэмерон</answer></right>
+            </question>
+            <question price="300">
+              <params>
+                <param name="question" type="content">
+                  <item>В каком городе разворачивается действие фильма Алексея Балабанова «Брат»?</item>
+                </param>
+              </params>
+              <right><answer>Санкт-Петербург</answer><answer>Петербург</answer><answer>Питер</answer></right>
+              <wrong><answer>Москва</answer></wrong>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Фраза «I’ll be back» из «Терминатора» прославила этого актёра.</item>
+                </param>
+              </params>
+              <right><answer>Арнольд Шварценеггер</answer><answer>Шварценеггер</answer></right>
+            </question>
+            <question price="500">
+              <info><comments>«Аватар» Джеймса Кэмерона (2009). «Титаник» перешагнул эту отметку только после повторного проката в 2012 году.</comments></info>
+              <params>
+                <param name="question" type="content">
+                  <item>Первый фильм в истории, собравший в мировом прокате больше двух миллиардов долларов.</item>
+                </param>
+              </params>
+              <right><answer>Аватар</answer></right>
+              <wrong><answer>Титаник</answer></wrong>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Музыка">
+          <questions>
+            <question price="100">
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько струн у классической гитары?</item>
+                </param>
+              </params>
+              <right><answer>6</answer><answer>Шесть</answer></right>
+              <wrong><answer>7</answer></wrong>
+            </question>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Композитор балета «Лебединое озеро».</item>
+                </param>
+              </params>
+              <right><answer>Пётр Чайковский</answer><answer>Чайковский</answer></right>
+            </question>
+            <question price="300">
+              <params>
+                <param name="question" type="content">
+                  <item>Под каким названием вошла в историю «ливерпульская четвёрка»?</item>
+                </param>
+              </params>
+              <right><answer>The Beatles</answer><answer>Битлз</answer><answer>Битлы</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>На каком инструменте играл виртуоз Никколо Паганини?</item>
+                </param>
+              </params>
+              <right><answer>Скрипка</answer></right>
+            </question>
+            <question price="500">
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько клавиш у стандартного современного фортепиано?</item>
+                </param>
+              </params>
+              <right><answer>88</answer></right>
+            </question>
+          </questions>
+        </theme>
+      </themes>
+    </round>
+    <round name="Основной раунд">
+      <info><comments>Здесь спрятаны кот в мешке, вопрос со ставкой, вопрос без риска, вопрос для всех и вопрос с вариантами ответа.</comments></info>
+      <themes>
+        <theme name="История">
+          <questions>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>В каком году Юрий Гагарин полетел в космос?</item>
+                </param>
+              </params>
+              <right><answer>1961</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Первый президент США.</item>
+                </param>
+              </params>
+              <right><answer>Джордж Вашингтон</answer><answer>Вашингтон</answer></right>
+              <wrong><answer>Линкольн</answer></wrong>
+            </question>
+            <question price="600" type="secret">
+              <params>
+                <param name="theme">Древний мир</param>
+                <param name="price" type="numberSet"><numberSet minimum="200" maximum="1000" step="400" /></param>
+                <param name="selectionMode">exceptCurrent</param>
+                <param name="question" type="content">
+                  <item>Это чудо света высотой больше 100 метров стояло у входа в гавань египетского города, основанного Александром Македонским.</item>
+                </param>
+              </params>
+              <right><answer>Александрийский маяк</answer><answer>Фаросский маяк</answer></right>
+            </question>
+            <question price="800">
+              <params>
+                <param name="question" type="content">
+                  <item>В каком году пала Берлинская стена?</item>
+                </param>
+              </params>
+              <right><answer>1989</answer></right>
+            </question>
+            <question price="1000">
+              <params>
+                <param name="question" type="content">
+                  <item>Сражение 1815 года, окончательно положившее конец правлению Наполеона.</item>
+                </param>
+              </params>
+              <right><answer>Ватерлоо</answer><answer>Битва при Ватерлоо</answer></right>
+              <wrong><answer>Бородино</answer></wrong>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Животные">
+          <questions>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Самое крупное животное из когда-либо живших на Земле.</item>
+                </param>
+              </params>
+              <right><answer>Синий кит</answer><answer>Голубой кит</answer><answer>Блювал</answer></right>
+              <wrong><answer>Кашалот</answer></wrong>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько ног у паука?</item>
+                </param>
+              </params>
+              <right><answer>8</answer><answer>Восемь</answer></right>
+            </question>
+            <question price="600" type="stake">
+              <params>
+                <param name="question" type="content">
+                  <item>Самое быстрое сухопутное животное.</item>
+                </param>
+              </params>
+              <right><answer>Гепард</answer></right>
+            </question>
+            <question price="800">
+              <params>
+                <param name="question" type="content">
+                  <item>Как называется детёныш лошади?</item>
+                </param>
+              </params>
+              <right><answer>Жеребёнок</answer></right>
+            </question>
+            <question price="1000">
+              <params>
+                <param name="question" type="content">
+                  <item>У этого млекопитающего самая долгая беременность — почти 22 месяца.</item>
+                </param>
+              </params>
+              <right><answer>Слон</answer></right>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Спорт">
+          <questions>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько игроков одной команды одновременно находятся на поле в футболе?</item>
+                </param>
+              </params>
+              <right><answer>11</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Город зимних Олимпийских игр 2014 года.</item>
+                </param>
+              </params>
+              <right><answer>Сочи</answer></right>
+            </question>
+            <question price="600" type="forAll">
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько колец на олимпийском флаге?</item>
+                </param>
+              </params>
+              <right><answer>5</answer><answer>Пять</answer></right>
+            </question>
+            <question price="800" type="noRisk">
+              <info><comments>Пять титулов: 1958, 1962, 1970, 1994 и 2002 годы.</comments></info>
+              <params>
+                <param name="question" type="content">
+                  <item>Сборная этой страны чаще всех выигрывала чемпионат мира по футболу.</item>
+                </param>
+              </params>
+              <right><answer>Бразилия</answer><answer>Сборная Бразилии</answer></right>
+              <wrong><answer>Германия</answer><answer>Италия</answer></wrong>
+            </question>
+            <question price="1000">
+              <params>
+                <param name="question" type="content">
+                  <item>Как называется шахматный ход, при котором король и ладья перемещаются одновременно?</item>
+                </param>
+              </params>
+              <right><answer>Рокировка</answer></right>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Еда">
+          <questions>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Родина пиццы.</item>
+                </param>
+              </params>
+              <right><answer>Италия</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Из какого растения делают текилу?</item>
+                </param>
+              </params>
+              <right><answer>Агава</answer><answer>Голубая агава</answer></right>
+              <wrong><answer>Кактус</answer></wrong>
+            </question>
+            <question price="600">
+              <params>
+                <param name="question" type="content">
+                  <item>Этот корнеплод даёт борщу его цвет.</item>
+                </param>
+              </params>
+              <right><answer>Свёкла</answer></right>
+              <wrong><answer>Морковь</answer></wrong>
+            </question>
+            <question price="800">
+              <params>
+                <param name="question" type="content">
+                  <item>Японское блюдо из тонко нарезанной сырой рыбы — без риса.</item>
+                </param>
+              </params>
+              <right><answer>Сашими</answer></right>
+              <wrong><answer>Суши</answer><answer>Роллы</answer></wrong>
+            </question>
+            <question price="1000">
+              <params>
+                <param name="question" type="content">
+                  <item>Самая дорогая пряность в мире: её собирают вручную с рылец цветков крокуса.</item>
+                </param>
+              </params>
+              <right><answer>Шафран</answer></right>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Языки">
+          <questions>
+            <question price="200">
+              <params>
+                <param name="question" type="content">
+                  <item>Сколько букв в современном русском алфавите?</item>
+                </param>
+              </params>
+              <right><answer>33</answer></right>
+            </question>
+            <question price="400">
+              <params>
+                <param name="question" type="content">
+                  <item>Как называются слова, одинаковые по написанию и звучанию, но разные по значению?</item>
+                </param>
+              </params>
+              <right><answer>Омонимы</answer></right>
+              <wrong><answer>Синонимы</answer><answer>Антонимы</answer><answer>Паронимы</answer></wrong>
+            </question>
+            <question price="600">
+              <params>
+                <param name="question" type="content">
+                  <item>Официальный язык Бразилии.</item>
+                </param>
+              </params>
+              <right><answer>Португальский</answer></right>
+              <wrong><answer>Испанский</answer></wrong>
+            </question>
+            <question price="800">
+              <params>
+                <param name="question" type="content">
+                  <item>Как называется слово или фраза, которые одинаково читаются слева направо и справа налево?</item>
+                </param>
+              </params>
+              <right><answer>Палиндром</answer></right>
+            </question>
+            <question price="1000">
+              <params>
+                <param name="question" type="content">
+                  <item>У какого языка больше всего носителей, для которых он родной?</item>
+                </param>
+                <param name="answerType">select</param>
+                <param name="answerOptions" type="group">
+                  <param name="A" type="content"><item>Английский</item></param>
+                  <param name="B" type="content"><item>Испанский</item></param>
+                  <param name="C" type="content"><item>Китайский</item></param>
+                  <param name="D" type="content"><item>Хинди</item></param>
+                </param>
+              </params>
+              <right><answer>C</answer></right>
+            </question>
+          </questions>
+        </theme>
+      </themes>
+    </round>
+    <round name="Финал" type="final">
+      <themes>
+        <theme name="Космос">
+          <questions>
+            <question price="0">
+              <params>
+                <param name="question" type="content">
+                  <item>Как звали собаку — первое живое существо, выведенное на орбиту Земли (1957)?</item>
+                </param>
+              </params>
+              <right><answer>Лайка</answer></right>
+              <wrong><answer>Белка</answer><answer>Стрелка</answer></wrong>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Изобретения">
+          <questions>
+            <question price="0">
+              <params>
+                <param name="question" type="content">
+                  <item>Этот изобретатель получил в 1876 году патент на телефон.</item>
+                </param>
+              </params>
+              <right><answer>Александр Белл</answer><answer>Белл</answer><answer>Грейам Белл</answer></right>
+            </question>
+          </questions>
+        </theme>
+        <theme name="Живопись">
+          <questions>
+            <question price="0">
+              <params>
+                <param name="question" type="content">
+                  <item>Автор картины «Звёздная ночь» (1889).</item>
+                </param>
+              </params>
+              <right><answer>Винсент Ван Гог</answer><answer>Ван Гог</answer></right>
+            </question>
+          </questions>
+        </theme>
+      </themes>
+    </round>
+  </rounds>
+</package>
